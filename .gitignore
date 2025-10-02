@@ -1,0 +1,49 @@
+# -----------------------------------------------------------------------------
+# 1. Virtual Environments (MUST IGNORE)
+# -----------------------------------------------------------------------------
+# Ignores all common virtual environments created inside the copilot-api folder
+copilot-api/venv/
+copilot-api/.venv/
+copilot-api/env/
+copilot-api/.env/
+copilot-api/bin/
+copilot-api/lib/
+
+# -----------------------------------------------------------------------------
+# 2. Byte-Compiled & Runtime Files
+# -----------------------------------------------------------------------------
+# Ignore Python byte-code and temporary files anywhere in the project
+*.pyc
+**/__pycache__/
+*.so
+*.pyd
+
+# -----------------------------------------------------------------------------
+# 3. IDE, Logs, and Temp Files
+# -----------------------------------------------------------------------------
+# IDE specific settings for the backend (e.g., PyCharm, VS Code)
+copilot-api/.vscode/
+copilot-api/.idea/
+
+# Log files and local databases inside the service folder
+copilot-api/*.log
+copilot-api/*.sqlite
+copilot-api/*.db
+!copilot-api/db.sqlite3 # UNCOMMENT this line if you use a specific database name you DO want to track
+
+# -----------------------------------------------------------------------------
+# 4. Sensitive and Configuration Files
+# -----------------------------------------------------------------------------
+# Environment variables and secrets
+.env
+.flaskenv
+secrets.json
+copilot-api/.env
+
+# -----------------------------------------------------------------------------
+# 5. OS and Build Artifacts
+# -----------------------------------------------------------------------------
+.DS_Store # macOS
+Thumbs.db # Windows
+dist/
+build/
