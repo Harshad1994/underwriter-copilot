@@ -24,6 +24,7 @@ copilot-api/lib/
 # IDE specific settings for the backend (e.g., PyCharm, VS Code)
 copilot-api/.vscode/
 copilot-api/.idea/
+.vscode
 
 # Log files and local databases inside the service folder
 copilot-api/*.log
